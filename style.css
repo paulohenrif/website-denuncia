@@ -4,6 +4,9 @@
     margin: 0px;
     padding: 0px;
 }
+body {
+    font-family: monospace;
+}
 h1 {
     text-align: center;
 }
@@ -11,7 +14,7 @@ h3 {
     text-align: center;
 }
 form {
-    background-color: green;
+    background-color: rgba(139, 0, 0, 0.692);
     width: 300px;
     height: 100px;
     padding: 10px;
