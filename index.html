@@ -12,17 +12,19 @@
         <h3>Faça sua denúncia nos espaços abaixo:</h3>
     </header>
     <br>
-    <form action="" method="get">
+    <h1>Dados pessoais: </h1>
+    <hr>
+    <form action="script.js" method="get">
         <label for="inome">Nome: <br></label>
-        <input type="text" name="nome" id="inome">
-    <br>
-    <br>    
-        <label for="isobrenome">Sobrenome: <br></label>
-        <input type="text" name="sobrenome" id="isobrenome">
+        <div>
+            <input type="text" name="nome" id="inome" placeholder="Nome" required>
+            <!-- <label for="isobrenome">Sobrenome: <br></label> -->
+            <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome" required>
+        </div>
     <br>
     <br>
         <label for="idenuncia">Denúncia: <br></label>
-        <input type="text" name="denuncia" id="idenuncia">
+        <input type="text" name="denuncia" id="idenuncia" placeholder="Escreva sua denúncia" required>
     <br>
     <br>
         <input type="submit" value="Enviar" id="submit">
