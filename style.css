@@ -15,8 +15,8 @@ h3 {
 }
 form {
     background-color: rgba(139, 0, 0, 0.692);
-    width: 170px;
-    height: 130px;
+    /* width: 170px;
+    height: 130px; */
     padding: 10px;
     border-radius: 10px;
     margin: auto;
