@@ -35,44 +35,50 @@
             <header>
                 <h1>Faça sua denúncia</h1>
             </header>
-            <form action="" method="get">
+            <form action="script.js" method="get">
                 <caption>Dados pessoais</caption>
                     <hr>
 
-                    <label for="icep">CEP <br></label>
-                <input type="text" name="CEP" id="icep">
-                
-                </form>
-                
-                
-                    <br> <br>
+                <label for="icep">CEP <br> </label>
+                <input type="text" name="CEP" id="icep" required placeholder="(xxxxx-xxx)"> <br>
 
-                <div id="sline">
-                    <div>
-                        <label for="icidade">Cidade</label>
-                        <input type="text" name="cidade" id="icidade">
-                    </div>
+                <div class="fline">
+                    <label for="icidade">Cidade <br></label>
+                    <input type="text" name="cidade" id="icidade">
+                </div>
 
-                    <div>
-                        <label for="iestado">Estado</label></div>
-                        <input type="text" name="estado" id="iestado">
-                    </div> </div>
+                <div class="fline">
+                    <label for="iestado">Estado <br></label>
+                    <input type="text" name="estado" id="iestado"> 
+                </div><br>
 
-                <br>
                 <label for="ibairro">Bairro <br></label>
-                <input type="text" name="bairro" id="ibairro">
-                <br>
+                <input type="text" name="bairro" id="ibairro"> <br>
+
                 <label for="irua">Rua <br></label>
-                <input type="text" name="rua" id="irua">
+                <input type="text" name="rua" id="irua"> <br>
+                
+                <div class="sline">
+                    <label for="inumero">Número <br></label>
+                    <input type="tel" name="numero" id="inumero" placeholder="(xx-xxxxx-xxxx)">
+                </div>
+
+                <div class="sline">
+                    <label for="icomplemento">complemento - <caption>opcional</caption> <br></label>
+                    <input type="text" name="complemento" id="icomplemento">
+                </div>
+                </form>
+                <br>
+                
+                <br>
+                
                 
                 <br> <br>
 
                 <div id="lline">
-                    <label for="inumero">Número <br></label>
-                    <input type="text" name="numero" id="inumero">
+                    
                     <br>
-                    <label for="icomplemento">complemento - <caption>opcional</caption> <br></label>
-                    <input type="text" name="complemento" id="icomplemento">
+                    
                 </div>
             </div>
         </article>

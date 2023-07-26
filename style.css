@@ -39,9 +39,9 @@ caption {
 } */
 
 
-/* #sline, #lline {
-    display: flex;
-}  */
+ .fline, .sline {
+    display: inline-block;
+}
 input {
     padding: 10px;
     /* border: none; */
