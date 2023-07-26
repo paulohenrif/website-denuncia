@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <h1>Denúncias</h1>
         <h3>Faça sua denúncia nos espaços abaixo:</h3>
     </header>
     <br>
-    <h1>Dados pessoais: </h1>
-    <hr>
+     <caption>Dados pessoais: </caption>
+     <hr>
     <form action="script.js" method="get">
         <label for="inome">Nome: <br></label>
         <div>
-            <input type="text" name="nome" id="inome" placeholder="Nome" required>
-            <!-- <label for="isobrenome">Sobrenome: <br></label> -->
-            <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome" required>
+            <input type="text" name="nome" id="inome" placeholder="Primeiro nome" required>
+             <label for="isobrenome">Sobrenome: <br></label>
+            <input type="text" name="sobrenome" id="isobrenome" placeholder="Segundo nome" required>
         </div>
     <br>
     <br>
@@ -28,7 +28,57 @@
     <br>
     <br>
         <input type="submit" value="Enviar" id="submit">
-    </form>
+    </form> -->
+
+    <main>
+        <article>
+            <header>
+                <h1>Faça sua denúncia</h1>
+            </header>
+            <form action="" method="get">
+                <caption>Dados pessoais</caption>
+                    <hr>
+
+                    <label for="icep">CEP <br></label>
+                <input type="text" name="CEP" id="icep">
+                
+                </form>
+                
+                
+                    <br> <br>
+
+                <div id="sline">
+                    <div>
+                        <label for="icidade">Cidade</label>
+                        <input type="text" name="cidade" id="icidade">
+                    </div>
+
+                    <div>
+                        <label for="iestado">Estado</label></div>
+                        <input type="text" name="estado" id="iestado">
+                    </div> </div>
+
+                <br>
+                <label for="ibairro">Bairro <br></label>
+                <input type="text" name="bairro" id="ibairro">
+                <br>
+                <label for="irua">Rua <br></label>
+                <input type="text" name="rua" id="irua">
+                
+                <br> <br>
+
+                <div id="lline">
+                    <label for="inumero">Número <br></label>
+                    <input type="text" name="numero" id="inumero">
+                    <br>
+                    <label for="icomplemento">complemento - <caption>opcional</caption> <br></label>
+                    <input type="text" name="complemento" id="icomplemento">
+                </div>
+            </div>
+        </article>
+        <aside></aside>
+    </main>
+
     <script src="script.js">
         
     </script>

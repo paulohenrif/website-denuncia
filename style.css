@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
+/** {
+     margin: 0px;
+    padding: 0px; 
 }
-body {
-    font-family: monospace;
+ body {
+     font-family: monospace;
 }
 h1 {
     text-align: center;
@@ -19,11 +19,7 @@ form {
     border-radius: 10px;
     margin: auto;
 }
-input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
+
 #submit {
     display: block;
     background-color: white;
@@ -34,7 +30,20 @@ input {
     border-radius: 5px;
     margin: auto;
 }
+div.sline {
+    display: inline;
+}
 
-div {
-    display: inline
+caption {
+    color: rgb(161, 152, 152);
+} */
+
+
+/* #sline, #lline {
+    display: flex;
+}  */
+input {
+    padding: 10px;
+    /* border: none; */
+    border-radius: 5px;
 }
