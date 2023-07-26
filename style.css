@@ -1,44 +1,23 @@
 @charset "UTF-8";
-body {
-     font-family: monospace;
-}
-/** {
-     margin: 0px;
+
+* {
+    margin: 0px;
     padding: 0px; 
 }
- 
-h1 {
-    text-align: center;
-}
-h3 {
-    text-align: center;
-}
-form {
-    background-color: rgba(139, 0, 0, 0.692);
-    padding: 10px;
-    border-radius: 10px;
-    margin: auto;
+body {
+     font-family: Arial, Helvetica, sans-serif;
 }
 
-#submit {
-    display: block;
-    background-color: white;
+#enviar {
+    background-color: rgb(255, 0, 0);
     color: black;
     width: 100px;
+    height: 10px;
     padding: 5px;
     border: none;
     border-radius: 5px;
     margin: auto;
 }
-div.sline {
-    display: inline;
-}
-
-caption {
-    color: rgb(161, 152, 152);
-} */
-
-
  .fline, .sline {
     display: inline-block;
 }
