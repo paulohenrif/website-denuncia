@@ -1,0 +1,19 @@
+@media screen and (max-width: 900px) {
+    div {
+        background-image: url('img/imgforcell.jpg');
+        height: 85vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    div {
+        background-image: url('img/imgforpc.jpg');
+        height: 85vh;
+        background-size: cover;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+}

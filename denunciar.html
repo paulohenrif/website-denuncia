@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <form action="home.html" method="get">
+        <div>
+            <caption>Dados pessoais</caption> <hr>
+
+                <div class="fline">
+                    <label for="inome">Nome <br></label>
+                    <input type="text" name="nome" id="inome" minlength="3" maxlength="15" required>
+                </div>
+
+                <div class="fline">
+                    <label for="isobrenome">Sobrenome <br></label>
+                    <input type="text" name="sobrenome" id="isobrenome" minlength="3" maxlength="15" required>
+                </div> <br>
+
+                <div>
+                    <label for="iemail">Email <br></label>
+                    <input type="email" name="email" id="iemail" style="width: 263px;" placeholder="example@gmail.com" required>
+                </div>
+        </div>
+            <br>
+                <div>
+                    <caption>Endereço</caption> <hr>
+                    
+                        <label for="icep">CEP <br> </label>
+                        <input type="text" name="CEP" id="icep" required placeholder="(xxxxx-xxx)"> <br>
+                        <div class="fline">
+                            <label for="icidade">Cidade <br></label>
+                            <input type="text" name="cidade" id="icidade">
+                        </div>
+                        <div class="fline">
+                            <label for="iestado">Estado <br></label>
+                            <input type="text" name="estado" id="iestado">
+                        </div> <br>
+                        <label for="ibairro">Bairro <br></label>
+                        <input type="text" name="bairro" id="ibairro"> <br>
+                        <label for="irua">Rua <br></label>
+                        <input type="text" name="rua" id="irua"> <br>
+                        <div class="sline">
+                            <label for="inumero">N° <br></label>
+                            <input type="tel" name="numero" id="inumero">
+                        </div>
+                        <div class="sline">
+                        <label for="icomplemento">complemento - <caption>opcional</caption> <br></label>
+                        <input type="text" name="complemento" id="icomplemento"> <br>
+                </div>
+        </div>
+    </form>
+                    <input type="submit" value="Enviar" id="enviar">
+</body>
+</html>

@@ -3,7 +3,13 @@
 * {
     margin: 0px;
     padding: 0px; 
-}
+} 
+/* body {
+    background-image: url('img/imgforpc.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+/*
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(0, 0, 0, 0.579);
@@ -28,4 +34,17 @@ input {
     padding: 10px;
     border: 0.1px solid rgba(0, 0, 0, 0.208);
     border-radius: 5px;
+} */
+
+ul, li {
+    display: flex;
+    background-color: white;
+    align-content: end;
+    justify-content: end;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    width: 477px;
 }
