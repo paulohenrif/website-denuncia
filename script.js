@@ -1,20 +1,10 @@
-// // <!--Importando Script Jquery-->
-// /*{<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> */}
-
-// // <!--Formulário-->
-// <scrip type="text/javascript">
-//     $("#cep").focusou(function()){
-// <form>
-// <label for="cep">CEP</label>
-// 		<input id="cep" type="text" required/>
-// <label for="logradouro">Logradouro</label>
-// 		<input id="logradouro" type="text" required/>
-// <label for="numero">Número</label>
-// 		<input id="numero" type="text" />
-// <label for="complemento">Complemento</label>
-// 		<input id="complemento" type="text"/>
-// <label for="bairro">Bairro</label>
-// 		<input id="bairro" type="text" required/>
+function clickMenu() {
+    if (menu.style.display == 'block'){
+        menu.style.display = 'none'
+    } else {
+        menu.style.display = 'block'
+    }
+}
 // <label for="uf">Estado</label>
 // 		<select id="uf">
 // 			<option value="AC">Acre</option>
@@ -45,4 +35,3 @@
 // 			<option value="SE">Sergipe</option>
 // 			<option value="TO">Tocantins</option>
 // 		</select>
-// </form>

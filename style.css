@@ -5,7 +5,6 @@
     padding: 0px; 
 } 
 body {
-    background-color: aqua;
     font-family: Arial, Helvetica, sans-serif;
 }
 main {
@@ -39,8 +38,14 @@ ul, li {
     justify-content: end;
     padding: 10px;
 }
-
-
+span {
+    display: block;
+    width: 100%;
+    text-align: end;
+}
+nav {
+    display: block;
+}
 
 
 
