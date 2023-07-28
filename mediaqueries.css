@@ -16,10 +16,4 @@
         background-position: top center;
         background-attachment: fixed;
     }
-    #hamburguer {
-        display: none;
-    }
-    nav {
-        display: block;
-    }
 }

@@ -1,21 +1,17 @@
 @charset "UTF-8";
 
 * {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px; 
 } 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+body, html {
+    background-color: darkgrey;
 }
 main {
     background-color: white;
-    width: 450px;
+    text-align: justify;
     margin: auto;
-}
-a {
-    text-decoration: none;
-    color: rgb(111, 0, 255);
-    font-weight: bold;
 }
 ul {
     display: flex;
@@ -32,22 +28,38 @@ ul li:hover {
     filter: blur(0px);
 }
 ul, li {
-    display: flex;
     background-color: white;
     align-content: end;
     justify-content: end;
     padding: 10px;
 }
-span {
+#hamburguer {
+    background-color: white;
+    color: blueviolet;
     display: block;
-    width: 100%;
     text-align: end;
+    padding: 10px;
 }
-nav {
+#navbar {
+    display: none;
+}
+#navbar > ul {
+    list-style-type: none;
+}
+#navbar > ul > li > a {
+    font-family: monospace;
     display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: blueviolet;
+    text-align: center;
 }
-
-
+#navbar > ul > li > a:hover {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    transition: .5s;
+}
 
 /*
  .fline, .sline {
