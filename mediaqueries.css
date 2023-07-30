@@ -1,6 +1,8 @@
 @media screen and (max-width: 900px) { /*RESPONSIVE FOR PHONE*/
-    div {
+    body {
         background-image: url('img/imgforcell.jpg');
+    }
+    div {
         height: 62vh;
         background-size: cover;
         background-position: center center;
@@ -9,8 +11,15 @@
 }
 
 @media screen and (min-width: 900px) { /*RESPONSIVE FOR PC*/
+    body {
+        background-image: url("img/imgforpc.jpg");
+    }
+    main {
+        width: 700px;
+        margin: auto;
+        margin-bottom: 0;
+    }
     div {
-        background-image: url('img/imgforpc.jpg');
         height: 63vh;
         background-size: cover;
         background-position: top center;
