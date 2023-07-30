@@ -11,7 +11,6 @@ body, html {
 main {
     background-color: white;
     text-align: justify;
-    margin: auto;
 }
 p {
     background-color: antiquewhite;
@@ -34,7 +33,7 @@ ul li:hover {
     filter: blur(0px);
 }
 ul, li {
-    background-color: white;
+    background-color: black;
     align-content: end;
     justify-content: end;
     padding: 10px;
@@ -46,20 +45,12 @@ ul, li {
     display: block;
     text-align: end;
     padding: 10px;
+    transition: .5s;
 }
 #navbar > ul {
     list-style-type: none;
 }
-#navbarpc > ul > li > a {
-    font-family: monospace;
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bolder;
-}
 #navbar > ul > li > a {
-    font-family: monospace;
     display: block;
     padding: 5px;
     text-decoration: none;
