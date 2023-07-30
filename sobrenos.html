@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nós</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width: 900px) { /*RESPONSIVE FOR PHONE*/
+    body {
+        background-image: url('img/imgforcell.jpg');
+    }
+    div {
+        height: 62vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 900px) { /*RESPONSIVE FOR PC*/
+    body {
+        background-image: url("img/imgforpc.jpg");
+    }
+    main {
+        width: 700px;
+        margin: auto;
+        margin-bottom: 0;
+    }
+    div {
+        height: 63vh;
+        background-size: cover;
+        background-position: top center;
+        background-attachment: fixed;
+    </style>
 </head>
 <body>
     <header>
@@ -47,7 +75,7 @@
                 <p>Telefone: (XX) XXXX-XXXX</p>
                 <p>Redes Sociais: @combateaviolencia</p>
                 <p>Juntos, podemos construir um futuro mais seguro e justo para todas as mulheres. Obrigado(a) por fazer parte da nossa luta!</p>
-                [Botão de chamada para ação: "Doe Agora" ou "Junte-se a Nós"].
+                <p>[Botão de chamada para ação: "Doe Agora" ou "Junte-se a Nós"].</p>
             </aside>
         </article>
     </main>
