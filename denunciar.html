@@ -20,9 +20,39 @@
         </nav>
     </header>
     <div></div>
-    <h1>Hello, World!</h1>
-    <form action="home.html" method="get">
+    <h1>Faça sua denúncia</h1> <hr>
+
+    <p>os campos sinalizados com asterisco * são de preenchimento obrigatório</p>
+    <form action="" method="get" autocomplete="on">
+        <h1>Destinatário</h1>
         <div>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+                <option value=""></option>
+                <option value="RN">RN</option>
+            </select>
+        </div>
+        <div>
+            <label for="imunicipio">Município</label>
+            <select name="municipio" id="imunicipio">
+                <option value=""></option>
+                <option value="AN">Angicos</option>
+            </select>
+        </div>
+        <div>
+            <label for="iorgao">Órgão para o qual você quer enviar sua manifestação*</label>
+            <select name="orgao" id="iorgao">
+                <option value=""></option>
+                <option value="PM">Prefeitura Municipal - Angicos/RN</option>
+            </select>
+        </div>
+
+        <h2>Descrição</h2> <hr> <br>
+
+        <h5>Fale aqui *</h5>
+        <p>Descreva abaixo o motivo da sua denúncia. Seja claro e objetivo. Informações pessoais. Inclusive identificação, não devem ser inseridas a não ser que sejam essenciais para a caracterização da manifestação.</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <!-- <div>
             <caption>Dados pessoais</caption> <hr>
 
                 <div class="fline">
@@ -97,9 +127,10 @@
          			<option value="SE">Sergipe</option>
          			<option value="TO">Tocantins</option>
                 </select>
-        </div>
+        </div> -->
     </form>
                     <input type="submit" value="Enviar" id="enviar">
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
 </html>
