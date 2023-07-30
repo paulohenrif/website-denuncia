@@ -10,9 +10,14 @@ body, html {
 }
 main {
     background-color: white;
-    width: 480px;
     text-align: justify;
     margin: auto;
+}
+p {
+    background-color: antiquewhite;
+    text-indent: 10px;
+    padding: 10px;
+    margin: 20px 10px;
 }
 ul {
     display: flex;
@@ -50,7 +55,6 @@ ul, li {
     display: block;
     padding: 5px;
     text-decoration: none;
-    color: blueviolet;
     text-align: center;
     font-weight: bolder;
 }
@@ -59,7 +63,6 @@ ul, li {
     display: block;
     padding: 5px;
     text-decoration: none;
-    color: blueviolet;
     text-align: center;
     font-weight: bolder;
 }
