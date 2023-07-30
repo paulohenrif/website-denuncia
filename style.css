@@ -33,10 +33,11 @@ ul li:hover {
     filter: blur(0px);
 }
 ul, li {
-    background-color: black;
-    align-content: end;
-    justify-content: end;
+    display: contents;
+    align-content: center;
+    justify-content: center;
     padding: 10px;
+    
 }
 #hamburguer {
     background-color: white;
@@ -45,17 +46,21 @@ ul, li {
     display: block;
     text-align: end;
     padding: 10px;
-    transition: .5s;
+}
+nav {
+    background-color: whitesmoke;
 }
 #navbar > ul {
     list-style-type: none;
 }
 #navbar > ul > li > a {
+    background-color: whitesmoke;
     display: block;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 900;
+    transition: 1s;
 }
 #navbar > ul > li > a:hover {
     background-color: blueviolet;

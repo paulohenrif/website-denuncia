@@ -1,23 +1,22 @@
 @media screen and (max-width: 900px) { /*RESPONSIVE FOR PHONE*/
     div {
         background-image: url('img/imgforcell.jpg');
-        height: 85vh;
+        height: 62vh;
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
-    }
-    #navbarpc {
-        display: none;
     }
 }
 
 @media screen and (min-width: 900px) { /*RESPONSIVE FOR PC*/
     div {
         background-image: url('img/imgforpc.jpg');
-        height: 85vh;
+        height: 63vh;
         background-size: cover;
         background-position: top center;
         background-attachment: fixed;
     }
-    
+    #navbar > ul > li {
+        display: inline-block;
+    }
 }
