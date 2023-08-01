@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
 } 
@@ -50,17 +50,16 @@ li {
     transition: .5s;
 }
 ul:hover li {
-    filter: blur(1.5px);
+    filter: blur(2px);
 }
 ul li:hover {
     filter: blur(0px);
 }
 ul, li {
-    display: contents;
+    display: flow-root;
     align-content: center;
     justify-content: center;
     padding: 10px;
-    
 }
 #hamburguer {
     background-color: transparent;
@@ -87,9 +86,7 @@ nav {
     transition: 1s;
 }
 #navbar > ul > li > a:hover {
-    background-color: blueviolet;
     color: white;
-    border-radius: 5px;
     transition: .5s;
 }
 ::-webkit-scrollbar {

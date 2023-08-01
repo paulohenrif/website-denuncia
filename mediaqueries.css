@@ -24,5 +24,7 @@
     }
     #navbar > ul > li {
         display: inline-block;
+        align-items: end;
+        justify-content: end;
     }
 }
