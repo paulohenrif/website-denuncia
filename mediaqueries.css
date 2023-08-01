@@ -1,19 +1,16 @@
 @media screen and (max-width: 900px) { /*RESPONSIVE FOR PHONE*/
     body {
-        background-image: url('img/imgforcell.jpg');
+        background-image: url('img/imgforpc.jpg');
+        background-position: 927px center;
     }
     div {
         height: 62vh;
         background-size: cover;
-        background-position: center center;
         background-attachment: fixed;
     }
 }
 
 @media screen and (min-width: 900px) { /*RESPONSIVE FOR PC*/
-    body {
-        background-image: url("img/imgforpc.jpg");
-    }
     main {
         width: 700px;
         margin: auto;

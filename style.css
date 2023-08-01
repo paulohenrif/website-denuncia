@@ -6,6 +6,7 @@
     padding: 0px;
 } 
 body, html {
+    background-image: url('img/imgforpc.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -63,7 +64,7 @@ ul, li {
 }
 #hamburguer {
     background-color: transparent;
-    color: black;
+    color: white;
     cursor: pointer;
     display: block;
     text-align: end;
@@ -78,7 +79,7 @@ nav {
 }
 #navbar > ul > li > a {
     display: block;
-    color: black;
+    color: white;
     padding: 10px;
     text-decoration: none;
     text-align: center;
