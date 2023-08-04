@@ -9,9 +9,11 @@ uf.addEventListener('change', async function() {
     
     let options = ''
     response.forEach(function(cidades){
-        options += '<option>'+cidades.nome+'</option>'
+        options += '<option>'+cidades.value+'</option>'
     })
+
     cidade.innerHTML = options
+
 })
 
 window.addEventListener( 'load', async () => {
