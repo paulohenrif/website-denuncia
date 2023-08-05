@@ -13,35 +13,6 @@
           margin: 0;
           padding: 0;
         }
-        #hamburguer {
-            background-color: transparent;
-            color: black;
-            cursor: pointer;
-            display: block;
-            text-align: end;
-            padding: 10px;
-            font-weight: 900;
-        }
-        nav {
-            background-color: transparent;
-        }
-        #navbar > ul {
-            list-style-type: none;
-        }
-        #navbar > ul > li > a {
-            text-transform: uppercase;
-            display: block;
-            color: black;
-            padding: 10px;
-            text-decoration: none;
-            text-align: center;
-            font-weight: 900;
-            transition: 1s;
-        }
-        #navbar > ul > li > a:hover {
-            color: white;
-            transition: .5s;
-        }
         section {
           padding: 2rem;
         }
@@ -124,6 +95,7 @@
     
               <label for="estado">Estado: *</label>
               <select id="estado" onchange="atualizarCidades()">
+                <option value="">Selecione um Estado</option>
               </select>
               
               <label for="cidade">Cidade: *</label>
