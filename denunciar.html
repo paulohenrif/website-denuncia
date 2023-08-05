@@ -63,7 +63,8 @@
       input, select {
         padding: 5px;
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.261);
+        transition: 1s;
       }
       input:hover {
         box-shadow: 1px 1px 5px #732b6b;
@@ -103,7 +104,7 @@
               <input type="email" id="email" placeholder="example@gmail.com" required>
     
               <label for="telefone">Telefone: <span>*</span></label>
-              <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+              <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" required>
     
               <label for="estado">Estado: <span>*</span></label>
               <select id="estado" onchange="atualizarCidades()">
@@ -112,6 +113,7 @@
 
               <label for="cidade">Cidade: <span>*</span></label>
               <select id="cidade" required>
+                <option value="">Selecione um Estado primeiro</option>
               </select>
     
               <label for="mensagem">Mensagem: <span>*</span></label>
