@@ -7,64 +7,77 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-        body {
-          font-family: Arial, sans-serif;
-          line-height: 1.6;
-          margin: 0;
-          padding: 0;
-        }
-        section {
-          padding: 2rem;
-        }
-    
-        .container {
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-    
-        .denuncia-form {
-          background-color: #fff;
-          border-radius: 5px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          padding: 2rem;
-        }
-    
-        .denuncia-form label,
-        .denuncia-form input,
-        .denuncia-form textarea {
-          display: block;
-          width: 100%;
-          margin-bottom: 10px;
-        }
-    
-        .denuncia-form button {
-          background-color: #732b6b;
-          color: #fff;
-          border: none;
-          padding: 1rem 2rem;
-          border-radius: 5px;
-          cursor: pointer;
-        }
-    
-        .denuncia-form button:hover {
-          background-color: #931d55;
-        }
-    
-        .suporte {
-          text-align: center;
-          margin-top: 2rem;
-        }
-    
-        .suporte p {
-          margin-bottom: 1rem;
-        }
-        footer {
-          background-color: #931d55;
-          color: #fff;
-          text-align: center;
-          padding: 1rem 0;
-        }
-      </style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        padding: 2rem;
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+  
+      .denuncia-form {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+      }
+  
+      .denuncia-form label,
+      .denuncia-form input,
+      .denuncia-form textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+  
+      .denuncia-form button {
+        background-color: #732b6b;
+        color: #fff;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .denuncia-form button:hover {
+        background-color: #931d55;
+      }
+      .suporte {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .suporte p {
+        margin-bottom: 1rem;
+      }
+      span {
+        color: red;
+      }
+      input, select {
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid black;
+      }
+      input:hover {
+        box-shadow: 1px 1px 5px #732b6b;
+        transition: 1s;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      footer {
+        background-color: #931d55;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -83,26 +96,26 @@
           <div class="denuncia-form">
             <h2>Faça sua denúncia</h2>
             <form>
-              <label for="nome">Nome: *</label>
-              <input type="text" id="nome" required>
+              <label for="nome">Nome: <span>*</span></label>
+              <input type="text" id="nome" placeholder="Maria Clara" required>
     
-              <label for="email">E-mail: *</label>
-              <input type="email" id="email" required>
+              <label for="email">E-mail: <span>*</span></label>
+              <input type="email" id="email" placeholder="example@gmail.com" required>
     
-              <label for="telefone">Telefone: *</label>
-              <input type="tel" id="telefone" required>
+              <label for="telefone">Telefone: <span>*</span></label>
+              <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
     
-              <label for="estado">Estado: *</label>
+              <label for="estado">Estado: <span>*</span></label>
               <select id="estado" onchange="atualizarCidades()">
                 <option value="">Selecione um Estado</option>
               </select>
-              
-              <label for="cidade">Cidade: *</label>
+
+              <label for="cidade">Cidade: <span>*</span></label>
               <select id="cidade" required>
               </select>
     
-              <label for="mensagem">Mensagem: *</label>
-              <textarea id="mensagem" rows="4" required></textarea>
+              <label for="mensagem">Mensagem: <span>*</span></label>
+              <textarea id="mensagem" rows="4" placeholder="Descreva sua denúncia aqui" required></textarea>
     
               <button type="submit">Enviar Denúncia</button>
             </form>
@@ -116,7 +129,7 @@
       </section>
     
       <footer>
-        <p>&copy; 2023 Website de Denúncia de Violência contra a Mulher</p>
+        &copy; 2023 Website de Denúncia de Violência contra a Mulher
       </footer>
     <script src="script.js"></script>
     <script src="statesandcities.js"></script>
