@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+        }
+        #hamburguer {
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+            display: block;
+            text-align: end;
+            padding: 10px;
+            font-weight: 900;
+        }
+        nav {
+            background-color: transparent;
+        }
+        #navbar > ul {
+            list-style-type: none;
+        }
+        #navbar > ul > li > a {
+            text-transform: uppercase;
+            display: block;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 900;
+            transition: 1s;
+        }
+        #navbar > ul > li > a:hover {
+            color: white;
+            transition: .5s;
+        }
+        section {
+          padding: 2rem;
+        }
+    
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+    
+        .denuncia-form {
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          padding: 2rem;
+        }
+    
+        .denuncia-form label,
+        .denuncia-form input,
+        .denuncia-form textarea {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+        }
+    
+        .denuncia-form button {
+          background-color: #732b6b;
+          color: #fff;
+          border: none;
+          padding: 1rem 2rem;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        .denuncia-form button:hover {
+          background-color: #931d55;
+        }
+    
+        .suporte {
+          text-align: center;
+          margin-top: 2rem;
+        }
+    
+        .suporte p {
+          margin-bottom: 1rem;
+        }
+        footer {
+          background-color: #931d55;
+          color: #fff;
+          text-align: center;
+          padding: 1rem 0;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <span id="hamburguer" class="material-symbols-outlined" onclick="clickNavbar()">menu</span>
+        <nav id="navbar">
+            <ul>
+                <li><a href="/index.html">Inicío</a></li>
+                <li><a href="./sobrenos.html">Sobre</a></li>
+                <li><a href="./denunciar.html">Denunciar</a></li>
+                <li><a href="./recursos.html">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div></div>
+      <section>
+        <div class="container">
+          <div class="denuncia-form">
+            <h2>Faça sua denúncia</h2>
+            <form>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" required>
+    
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" required>
+    
+              <label for="telefone">Telefone:</label>
+              <input type="tel" id="telefone" required>
+    
+              <label for="estado">Estado:</label>
+              <select id="estado" onchange="atualizarCidades()">
+              </select>
+    
+              <label for="cidade">Cidade:</label>
+              <select id="cidade" required>
+              </select>
+    
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" rows="4" required></textarea>
+    
+              <button type="submit">Enviar Denúncia</button>
+            </form>
+          </div>
+    
+          <div class="suporte">
+            <p>Se você precisa de suporte imediato, ligue para o número nacional de emergência.</p>
+            <p>Disque 180</p>
+          </div>
+        </div>
+      </section>
+    
+      <footer>
+        <p>&copy; 2023 Website de Denúncia de Violência contra a Mulher</p>
+      </footer>
+    <script src="script.js"></script>
+    <script>
+        const endpointEstados = "https://servicodados.ibge.gov.br/api/v1/localidades/estados";
+        const endpointCidades = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/{{UF}}/municipios";
+    
+        async function buscarEstados() {
+            try {
+            const response = await fetch(endpointEstados);
+            const estados = await response.json();
+    
+            const estadoSelect = document.getElementById("estado");
+            estados.forEach((estado) => {
+                const option = document.createElement("option");
+                option.value = estado.sigla;
+                option.text = estado.nome;
+                estadoSelect.appendChild(option);
+            });
+            } catch (error) {
+            console.error("Erro ao buscar os estados:", error);
+            }
+        }
+    
+        async function buscarCidades(uf) {
+            try {
+            const response = await fetch(endpointCidades.replace("{{UF}}", uf));
+            const cidades = await response.json();
+    
+            const cidadeSelect = document.getElementById("cidade");
+            cidadeSelect.innerHTML = "<option value=''>Selecione uma cidade</option>";
+            cidades.forEach((cidade) => {
+                const option = document.createElement("option");
+                option.value = cidade.nome;
+                option.text = cidade.nome;
+                cidadeSelect.appendChild(option);
+            });
+            } catch (error) {
+            console.error("Erro ao buscar as cidades:", error);
+            }
+        }
+    
+        function atualizarCidades() {
+            const estadoSelect = document.getElementById("estado");
+            const ufSelecionado = estadoSelect.value;
+    
+            const cidadeSelect = document.getElementById("cidade");
+            cidadeSelect.innerHTML = "<option value=''>Carregando...</option>";
+    
+            if (ufSelecionado) {
+            buscarCidades(ufSelecionado);
+            } else {
+            cidadeSelect.innerHTML = "<option value=''>Selecione um estado primeiro</option>";
+            }
+        }
+
+        buscarEstados();
+    </script>
+</body>
+</html>
