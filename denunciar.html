@@ -104,7 +104,7 @@
               <input type="email" id="email" placeholder="example@gmail.com" required>
     
               <label for="telefone">Telefone: <span>*</span></label>
-              <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" oninput="formatTelefone()" required>
+              <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" oninput="formatTelefone()" maxlength="13">
     
               <label for="estado">Estado: <span>*</span></label>
               <select id="estado" onchange="atualizarCidades()">
