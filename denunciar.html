@@ -104,7 +104,7 @@
               <input type="email" id="email" placeholder="example@gmail.com" required>
     
               <label for="telefone">Telefone: <span>*</span></label>
-              <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+              <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" oninput="formatTelefone()" required>
     
               <label for="estado">Estado: <span>*</span></label>
               <select id="estado" onchange="atualizarCidades()">
@@ -133,6 +133,15 @@
       <footer>
         &copy; 2023 Website de Denúncia de Violência contra a Mulher
       </footer>
+    <script>
+      function formatTelefone() {
+        const input = document.getElementById('telefone');
+        const value = input.value.replace(/\D/g, '');
+
+        const formattedValue = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+        input.value = formattedValue;
+      }
+    </script>
     <script src="script.js"></script>
     <script src="statesandcities.js"></script>
 </body>
