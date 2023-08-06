@@ -6,7 +6,7 @@
     padding: 0px;
 } 
 body, html {
-    background-image: url('img/imgforpc.jpg');
+    background-image: url('img/woman.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -68,9 +68,11 @@ ul, li {
     text-align: end;
     padding: 10px;
     font-weight: 900;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.557);
 }
 nav {
     background-color: transparent;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
 }
 #navbar > ul {
     list-style-type: none;
@@ -78,12 +80,12 @@ nav {
 #navbar > ul > li > a {
     text-transform: uppercase;
     display: block;
-    color: #732b6b;
+    color: black;
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    font-weight: 900;
     transition: 1s;
+    font-weight: bolder;
 }
 #navbar > ul > li > a:hover {
     color: #931d55;
