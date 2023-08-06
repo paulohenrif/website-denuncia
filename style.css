@@ -5,7 +5,7 @@
     margin: 0px;
     padding: 0px;
 } 
-body, html {
+body {
     background-image: url('img/woman.jpg');
     background-size: cover;
     background-position: center center;
