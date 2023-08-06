@@ -8,8 +8,6 @@
 
 @media screen and (min-width: 900px) { /*RESPONSIVE FOR PC*/
     main {
-        width: 700px;
-        margin: auto;
         margin-bottom: 0;
     }
     div {
