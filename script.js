@@ -1,4 +1,3 @@
-alert('Hello, World!')
 function clickNavbar() {
     if (navbar.style.display == 'block'){
         navbar.style.display = 'none'

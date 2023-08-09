@@ -13,24 +13,26 @@
         margin: 0;
         padding: 0;
       }
+      @media screen and (min-width: 900px) { /*RESPONSIVE FOR PC*/
+        #navbar > ul > li {
+            display: inline-block;
+        }
+      }
       section {
         padding: 2rem;
         max-width: 600px;
         margin: auto;
       }
-
-      .container {
+      .formulario {
         max-width: 1200px;
         margin: 0 auto;
       }
-  
       .denuncia-form {
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         padding: 2rem;
       }
-  
       .denuncia-form label,
       .denuncia-form input,
       .denuncia-form textarea {
@@ -38,7 +40,6 @@
         width: 100%;
         margin-bottom: 10px;
       }
-  
       .denuncia-form button {
         background-color: #732b6b;
         color: #fff;
@@ -52,10 +53,7 @@
       }
       .suporte {
         text-align: center;
-        margin-top: 2rem;
-      }
-      .suporte p {
-        margin-bottom: 1rem;
+        margin-top: 1rem;
       }
       span {
         color: red;
@@ -93,7 +91,7 @@
         </nav>
     </header>
       <section>
-        <div class="container">
+        <div class="formulario">
           <div class="denuncia-form">
             <h2>Faça sua denúncia</h2>
             <form>
@@ -107,7 +105,7 @@
               <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" oninput="formatTelefone()" maxlength="13">
     
               <label for="estado">Estado: <span>*</span></label>
-              <select id="estado" onchange="atualizarCidades()">
+              <select id="estado" onchange="atualizarCidades()" required>
                 <option value="">Selecione um Estado</option>
               </select>
 
@@ -127,6 +125,7 @@
             <p>Se você precisa de suporte imediato, ligue para o número nacional de emergência.</p>
             <p>Disque 180</p>
           </div>
+          
         </div>
       </section>
     
