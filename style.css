@@ -10,29 +10,34 @@ body {
     background-size: cover;
 }
 header {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.43);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.133);
     backdrop-filter: blur(10px);
 }
 main {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.14);
+}
+section {
     background-color: white;
     max-width: 700px;
     text-align: justify;
     padding: 10px;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.549);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.114);
 }
 h1 {
+    color: #732b6b;
     text-align: center;
-    text-shadow: 1px 1px 8px blueviolet;
-    font-size: xx-large;
+    font-size: x-large;
 }
-h2, h1 {
+h2 {
+    text-align: center;
+    color: #931d55;
     padding: 10px;
-    font-weight: 200;
 }
 p {
-    background-color: whitesmoke;
     font-size: large;
     text-indent: 20px;
     padding: 10px;
@@ -65,7 +70,7 @@ ul, li {
     text-align: end;
     padding: 10px;
     font-weight: 900;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.557);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.142);
 }
 nav {
     background-color: transparent;
