@@ -1,15 +1,13 @@
 @charset "UTF-8";
 
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 } 
 body {
-    background-image: url('img/woman.jpg');
+    background: url("img/woman.jpg") no-repeat center center fixed;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
 header {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.43);
@@ -27,16 +25,15 @@ main {
 h1 {
     text-align: center;
     text-shadow: 1px 1px 8px blueviolet;
-    padding: 10px;
-    font-weight: 200;
+    font-size: xx-large;
 }
-h2 {
+h2, h1 {
     padding: 10px;
     font-weight: 200;
 }
 p {
-    background-color: rgba(250, 235, 215, 0.435);
-    text-indent: 10px;
+    background-color: whitesmoke;
+    text-indent: 20px;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -58,7 +55,6 @@ ul, li {
     display: flow-root;
     align-content: center;
     justify-content: center;
-    padding: 10px;
 }
 #hamburguer {
     background-color: transparent;
@@ -81,6 +77,7 @@ nav {
     text-transform: uppercase;
     display: block;
     color: black;
+    padding: 10px;
     text-decoration: none;
     text-align: center;
     transition: 1s;
