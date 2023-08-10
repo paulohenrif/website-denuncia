@@ -33,6 +33,7 @@ h2, h1 {
 }
 p {
     background-color: whitesmoke;
+    font-size: large;
     text-indent: 20px;
     padding: 10px;
     margin-bottom: 20px;
