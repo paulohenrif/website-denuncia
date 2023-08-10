@@ -81,11 +81,9 @@ nav {
     text-transform: uppercase;
     display: block;
     color: black;
-    padding: 10px;
     text-decoration: none;
     text-align: center;
     transition: 1s;
-    font-weight: bolder;
 }
 #navbar > ul > li > a:hover {
     color: #931d55;
