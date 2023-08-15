@@ -6,8 +6,7 @@
     padding: 0px;
 } 
 body {
-    background: url("img/woman.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background: url("img/woman.jpg") no-repeat center center/cover fixed;
 }
 header {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.133);
