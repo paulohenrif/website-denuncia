@@ -79,59 +79,59 @@
     </style>
 </head>
 <body>
-    <header>
-        <span id="hamburguer" class="material-symbols-outlined" onclick="clickNavbar()">menu</span>
-        <nav id="navbar">
-            <ul>
-              <li><a href="index.html">Inicío</a></li>
-              <li><a href="sobrenos.html">Sobre</a></li>
-              <li><a href="#">Denunciar</a></li>
-              <li><a href="recursos.html">Recursos</a></li>
-            </ul>
-        </nav>
-    </header>
-      <section>
-        <div class="formulario">
-          <div class="denuncia-form">
-            <h2>Faça sua denúncia</h2>
-            <form>
-              <label for="nome">Nome: <span>*</span></label>
-              <input type="text" id="nome" placeholder="Maria Clara" required>
-    
-              <label for="email">E-mail: <span>*</span></label>
-              <input type="email" id="email" placeholder="example@gmail.com" required>
-    
-              <label for="telefone">Telefone: <span>*</span></label>
-              <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" oninput="formatTelefone()" maxlength="13">
-    
-              <label for="estado">Estado: <span>*</span></label>
-              <select id="estado" onchange="atualizarCidades()" required>
-                <option value="">Selecione um Estado</option>
-              </select>
+  <header>
+    <span id="hamburguer" class="material-symbols-outlined" onclick="clickNavbar()">menu</span>
+    <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Inicío</a></li>
+          <li><a href="sobrenos.html">Sobre</a></li>
+          <li><a href="#">Denunciar</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+        </ul>
+    </nav>
+  </header>
+    <section>
+      <div class="formulario">
+        <div class="denuncia-form">
+          <h2>Faça sua denúncia</h2>
+          <form>
+            <label for="nome">Nome: <span>*</span></label>
+            <input type="text" id="nome" placeholder="Maria Clara" required>
+  
+            <label for="email">E-mail: <span>*</span></label>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+  
+            <label for="telefone">Telefone: <span>*</span></label>
+            <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" oninput="formatTelefone()" maxlength="13">
+  
+            <label for="estado">Estado: <span>*</span></label>
+            <select id="estado" onchange="atualizarCidades()" required>
+              <option value="">Selecione um Estado</option>
+            </select>
 
-              <label for="cidade">Cidade: <span>*</span></label>
-              <select id="cidade" required>
-                <option value="">Selecione um Estado primeiro</option>
-              </select>
-    
-              <label for="mensagem">Mensagem: <span>*</span></label>
-              <textarea id="mensagem" rows="4" placeholder="Descreva sua denúncia aqui" required></textarea>
-    
-              <button type="submit">Enviar Denúncia</button>
-            </form>
-          </div>
-    
-          <div class="suporte">
-            <p>Se você precisa de suporte imediato, ligue para o número nacional de emergência.</p>
-            <p>Disque 180</p>
-          </div>
-          
+            <label for="cidade">Cidade: <span>*</span></label>
+            <select id="cidade" required>
+              <option value="">Selecione um Estado primeiro</option>
+            </select>
+  
+            <label for="mensagem">Mensagem: <span>*</span></label>
+            <textarea id="mensagem" rows="4" placeholder="Descreva sua denúncia aqui" required></textarea>
+  
+            <button type="submit">Enviar Denúncia</button>
+          </form>
         </div>
-      </section>
-    
-      <footer>
-        &copy; 2023 Website de Denúncia de Violência contra a Mulher
-      </footer>
+  
+        <div class="suporte">
+          <p>Se você precisa de suporte imediato, ligue para o número nacional de emergência.</p>
+          <p>Disque 180</p>
+        </div>
+        
+      </div>
+    </section>
+  
+    <footer>
+      &copy; 2023 Website de Denúncia de Violência contra a Mulher
+    </footer>
     <script>
       function formatTelefone() {
         const input = document.getElementById('telefone');
