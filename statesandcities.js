@@ -1,11 +1,13 @@
 const endpointEstados = "https://servicodados.ibge.gov.br/api/v1/localidades/estados";
 const endpointCidades = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/{{UF}}/municipios";
-    
-    async function buscarEstados() {
+
+async function buscarEstados() {
         try {
         const response = await fetch(endpointEstados);
         const estados = await response.json();
 
+        estados.sort((a, b) => (a.nome > b.nome) ? 1 : -1);
+        
         const estadoSelect = document.getElementById("estado");
         estados.forEach((estado) => {
             const option = document.createElement("option");
