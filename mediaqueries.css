@@ -1,19 +1,46 @@
-@media screen and (max-width: 900px) { /*RESPONSIVE FOR PHONE*/
-    div {
-        height: 50vh;
-        background-size: cover;
-        background-attachment: fixed;
+@media screen and (min-width: 768px) { /*RESPONSIVE FOR PHONE*/
+    #p-1 {
+        background-color: aquamarine;
+        position: relative;
+        top: 0;
+        left: -47%;
+        transform: translate(55%, 0%);
+    }
+    #p-2 {
+        background-color: aquamarine;
+        position: relative;
+        top: 0;
+        left: -21%;
+        transform: translate(55%, 0%);
+    }
+    #fig-1 {
+        background-color: red;
+        width: 300px;
+        height: 56px;
+        transform: translate(3%, 27%);
+    }
+    #fig-2 {
+        background-color: red;
+        width: 300px;
+        height: 56px;
+        transform: translate(-98%, 20%);
+    }
+    figure {
+        display: flex;
+    }
+    #figure-2 {
+        position: relative;
+        top: 0;
+        left: -21%;
+        transform: translate(0%, 0%);
+    }
+    #figure-3 {
+        display: none;
     }
 }
 @media screen and (min-width: 900px) { /*RESPONSIVE FOR PC*/
     main {
         margin-bottom: 0;
-    }
-    div {
-        height: 50vh;
-        background-size: cover;
-        background-position: top center;
-        background-attachment: fixed;
     }
     #navbar > ul > li {
         display: inline-block;
