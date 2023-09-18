@@ -1,13 +1,32 @@
 <!DOCTYPE html>
+<!-- <html xmlns="http://www.w3.org/1999/xhtml">
+    <pessoas>
+        <pessoas>
+            <nome>Paulo</nome>
+            <sobrenome>Henrique</sobrenome>
+
+            <email>paulo@gmail.com</email>
+            <telefone>+55 (84) 9 9985-2785</telefone>
+        </pessoas>
+    </pessoas> -->
+</html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Styles -->
     
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css" media="all">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Icons -->
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap" rel="stylesheet">
@@ -18,18 +37,45 @@
     <title>#DIGANÃO</title>
 </head>
 <body>
-    <header>
-        <span id="hamburguer" class="material-symbols-outlined" onclick="clickNavbar()">menu</span>
-        <nav id="navbar">
+    <div id="background">
+        <header>
+        <h1><a href="#">Denuncie</a></h1>
+        <nav id="menu">
             <ul>
-                <li><a href="#">Inicío</a></li>
-                <li><a href="sobrenos.html">Sobre</a></li>
-                <li><a href="denunciar.html">Denunciar</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="" class="link">Você</a></li>
+                <li><a href="" class="link">Blog</a></li>
+                <li><a href="" class="link">Sobre</a></li>
+                <li><a href="subpages/contato.html" class="link">Contato</a></li>
+                <input type="button" id="btnbar" value="Primeiros passos">
             </ul>
         </nav>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickNavbar()" style="font-size: 50px;">drag_handle</span>
     </header>
-    <div></div>
+
+    <section>
+        <h2>Encontre a felicidade e aprenda a priorizá-la.</h2>
+    </section>
+
+    </div>
+
+    <main>
+        <figure id="figure-1"><img src="img/mulher-1.jpg">
+        <figcaption id="fig-1">Nossa Missão</figcaption> <br>
+        <p id="p-1">Na nossa luta incansável pela justiça e igualdade, estamos comprometidos(as) em erradicar a violência contra a mulher. Acreditamos que cada mulher merece viver com dignidade, respeito e segurança, e é por isso que unimos esforços para promover uma sociedade onde a violência seja coisa do passado.</p>
+        </figure>
+
+        <figure id="figure-2" style="flex-direction: row-reverse;"><img src="img/mulher-2.jpg">
+        <figcaption id="fig-2">Por que Nos Importamos</figcaption> <br>
+        <p id="p-2">A violência contra a mulher é uma realidade alarmante, afetando milhões de vidas ao redor do mundo. Nós não podemos ficar indiferentes a essa situação. Cada história de dor nos impulsiona a agir e criar mudanças significativas em nossa comunidade e além.</p>
+        </figure>
+
+        <figure id="figure-3"><img src="img/mulher-3.jpg">
+        <figcaption>Nossa Abordagem</figcaption> <br>
+        <p>Aqui, acreditamos no poder da informação, da educação e do apoio mútuo. Nossa abordagem se baseia na conscientização, no fornecimento de recursos vitais e no estabelecimento de uma rede de apoio para que todas as mulheres possam se sentir fortalecidas para enfrentar seus desafios.</p>
+        </figure>
+    </main>
+
+
         <section>
             <article>
                 <h1>Bem-vindo(a) à Nossa Comunidade: Combatendo a Violência Contra a Mulher</h1>
