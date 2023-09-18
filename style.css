@@ -10,6 +10,7 @@
 }
 body {
     background-color: rgba(95, 6, 177, 0.265);
+    font-family: 'Cormorant Garamond', serif;
 }
 #background {
     display: block;
@@ -45,12 +46,6 @@ h2 {
     text-align: center;
     color: #931d55;
     padding: 10px;
-}
-p {
-    font-size: large;
-    text-indent: 20px;
-    padding: 10px;
-    margin-bottom: 20px;
 }
 ul {
     display: flex;
@@ -100,6 +95,60 @@ nav {
 #navbar > ul > li > a:hover {
     color: #931d55;
     transition: .5s;
+}
+
+
+figure > img {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    padding-top: 20px;
+}
+figcaption {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 20px;
+}
+p {
+    font-size: 20px;
+    width: 450px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#btnbar {
+    background-color: rgba(150, 57, 237, 0.404);
+    border: none;
+    padding: 10px;
+}
+#btnbar:hover {
+    background: transparent;
+    border: 1px solid;
+    transition: 1s;
+}
+footer {
+    background-color: aliceblue;
+    height: 300px;
+    padding: 37px;
+}
+#footer, #denuncie {
+    font-size: 17px;
+    font-weight: lighter;
+}
+#footer, #seulugar {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+#footer > li > a {
+    color: gray;
+    font-size: 20px;
+    text-decoration: underline;
+}
+#footer  > li {
+    display: block;
+    text-align: left;
 }
 ::-webkit-scrollbar {
     display: none;

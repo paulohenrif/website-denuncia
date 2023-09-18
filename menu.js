@@ -1,7 +1,7 @@
 function clickNavbar() {
-    if (navbar.style.display == 'block') {
-        navbar.style.display = 'none'
+    if (menu.style.display == 'block') {
+        menu.style.display = 'none'
     } else {
-        navbar.style.display = 'block'
+        menu.style.display = 'block'
     }
 }
