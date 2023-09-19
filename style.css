@@ -25,6 +25,15 @@ header {
     justify-content: space-between;
     padding: 20px;
 }
+header h1 a {
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+}
+li > a {
+    text-decoration: none;
+    color: white;
+}
 /* header {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.133);
     backdrop-filter: blur(10px);
@@ -62,15 +71,11 @@ ul, li {
     align-content: center;
     justify-content: center;
 }
-#hamburguer {
+#burguer {
     background-color: transparent;
-    color: #732b6b;
+    font-weight: lighter;
+    color: white;
     cursor: pointer;
-    display: block;
-    text-align: end;
-    padding: 10px;
-    font-weight: 900;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.142);
 }
 nav {
     background-color: transparent;
@@ -107,7 +112,7 @@ figcaption {
     text-align: center;
     padding-top: 20px;
 }
-p {
+figure > p {
     font-size: 20px;
     width: 338px;
     margin: auto;
@@ -128,14 +133,16 @@ footer {
     height: 300px;
     padding: 37px;
 }
-#footer, #denuncie {
+#denuncie {
     font-size: 17px;
     font-weight: lighter;
+    padding: 10px;
 }
 #footer, #seulugar {
     font-size: 30px;
     font-weight: bold;
     text-align: left;
+    padding: 10px;
 }
 #footer > li > a {
     color: gray;
@@ -149,3 +156,4 @@ footer {
 ::-webkit-scrollbar {
     display: none;
 }
+
