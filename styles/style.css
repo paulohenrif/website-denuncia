@@ -11,7 +11,7 @@ body {
     background-color: rgba(95, 6, 177, 0.265);
     font-family: 'Cormorant Garamond', serif;
 }
-#background {
+div#background {
     display: block;
     background: url("/img/background-inicial-diganao.jpg") no-repeat center center fixed;
     width: 100%;
@@ -77,12 +77,16 @@ ul, li {
     user-select: none;
 }
 nav {
+    background-color: #732b6b;
+    width: 100vw;
+    height: 2734px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
     font-size: 19px;
     font-weight: bold;
-    position: relative;
-    top: 60px;
-    left: 100px;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    z-index: 1;
 }
 #navbar > ul {
     list-style-type: none;
