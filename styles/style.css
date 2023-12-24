@@ -119,6 +119,60 @@ figure > p {
     margin: auto;
     padding-bottom: 20px;
 }
+.formulario {
+max-width: 1200px;
+margin: 0 auto;
+}
+.denuncia-form {
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 2px 15px rgba(0, 0, 0, 0.117);
+padding: 2rem;
+}
+.denuncia-form label,
+.denuncia-form input,
+.denuncia-form textarea {
+display: block;
+width: 100%;
+margin-bottom: 10px;
+}
+.denuncia-form button {
+background-color: #732b6b;
+color: #fff;
+border: none;
+padding: 1rem 2rem;
+border-radius: 5px;
+cursor: pointer;
+}
+.denuncia-form button:hover {
+background-color: #931d55;
+}
+
+input, select {
+padding: 5px;
+border: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.261);
+transition: 1s;
+}
+input:hover {
+box-shadow: 0px 2px 4px #732b6b57;
+transition: 1s;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+}
+
+.suporte {
+text-align: center;
+margin-top: 1rem;
+}
+span {
+color: red;
+}
+section {
+padding: 2rem;
+max-width: 600px;
+margin: auto;
+}
 #btnbar {
     background-color: rgba(150, 57, 237, 0.404);
     border: none;
@@ -157,4 +211,3 @@ footer {
 ::-webkit-scrollbar {
     display: none;
 }
-
