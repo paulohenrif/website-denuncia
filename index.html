@@ -6,9 +6,9 @@
 
     <!-- Styles -->
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css" media="all">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mediaqueries.css" media="all">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
     <!-- Icons -->
 
@@ -26,14 +26,13 @@
     <title>#DIGANÃO</title>
 </head>
 <body>
-
     <div id="background">
         <header>
         <h1><a href="#">Denuncie</a></h1>
         <nav id="menu">
             <ul>
-                <li><a href="subpages/recursos.html" class="link">Você</a></li>
-                <li><a href="subpages/denunciar.html" class="link">Blog</a></li>
+                <li><a href="subpages/recursos.html" class="link">Recursos</a></li>
+                <li><a href="subpages/denunciar.html" class="link">Denunciar</a></li>
                 <li><a href="subpages/sobrenos.html" class="link">Sobre</a></li>
                 <li><a href="subpages/contato.html" class="link">Contato</a></li>
                 <input type="button" id="btnbar" value="Primeiros passos">
@@ -42,7 +41,6 @@
         <span id="burguer" class="material-symbols-outlined" onclick="clickNavbar()" style="font-size: 50px;">drag_handle</span>
     </header>
 
-
     <section>
         <h2>Encontre a felicidade e aprenda a priorizá-la.</h2>
     </section>
@@ -50,12 +48,12 @@
     </div>
 
     <main>
-        <figure id="figure-1"><img src="img/mulher-1.jpg">
+        <figure id="figure-1"><img src="./img/mulher-1.jpg">
         <figcaption id="fig-1">Nossa Missão</figcaption> <br>
         <p id="p-1">Na nossa luta incansável pela justiça e igualdade, estamos comprometidos(as) em erradicar a violência contra a mulher. Acreditamos que cada mulher merece viver com dignidade, respeito e segurança, e é por isso que unimos esforços para promover uma sociedade onde a violência seja coisa do passado.</p>
         </figure>
 
-        <figure id="figure-2" style="flex-direction: row-reverse;"><img src="img/mulher-2.jpg">
+        <figure id="figure-2" style="flex-direction: row-reverse;"><img src="./img/mulher-2.jpg">
         <figcaption id="fig-2">Por que Nos Importamos</figcaption> <br>
         <p id="p-2">A violência contra a mulher é uma realidade alarmante, afetando milhões de vidas ao redor do mundo. Nós não podemos ficar indiferentes a essa situação. Cada história de dor nos impulsiona a agir e criar mudanças significativas em nossa comunidade e além.</p>
         </figure>
@@ -74,11 +72,13 @@
 
         <ul id="footer">
             <li><a href="">Você</a></li>
-            <li><a href="">Sobre</a></li>
+            <li><a href="subpages/sobrenos.html">Sobre</a></li>
             <li><a href="">Primeiros passos</a></li>
         </ul>
     </footer>
 
-    <script src="menu.js"></script>
+    <script src="scripts/menu.js">
+        
+    </script>
 </body>
 </html>
