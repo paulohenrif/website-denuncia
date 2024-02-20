@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
 }
-*::selection {
+::selection {
     background-color: rgba(95, 6, 177, 0.265);
 }
 body {
