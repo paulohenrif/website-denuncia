@@ -13,7 +13,7 @@ body {
 }
 div#background {
     display: block;
-    background: url("/img/background-inicial-diganao.jpg") no-repeat center center fixed;
+    background: url("/img/bg-diganao.jpg") no-repeat center center fixed;
     width: 100%;
     height: 85vh;
     border-bottom-left-radius: 464mm 40mm;
