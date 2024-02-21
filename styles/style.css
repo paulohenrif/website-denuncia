@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
     margin: 0px;
     padding: 0px;
@@ -7,13 +6,19 @@
 ::selection {
     background-color: rgba(95, 6, 177, 0.265);
 }
+::-webkit-scrollbar {
+    display: none;
+}
 body {
     background-color: rgba(95, 6, 177, 0.265);
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-div#background {
+
+
+/* APRESENTAÇÃO */
+section#apresentacao {
     display: block;
-    background: url("/img/bg-diganao.jpg") no-repeat center center fixed;
+    background: url("/img/Background/bg-diganao.jpg") no-repeat center center fixed;
     width: 100%;
     height: 85vh;
     border-bottom-left-radius: 464mm 40mm;
@@ -33,15 +38,9 @@ li > a {
     text-decoration: none;
     color: white;
 }
-/* header {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.133);
-    backdrop-filter: blur(10px);
-}
-main {
-    background-color: whitesmoke;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.14);
-} */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
 h2 {
     color: white;
     font-size: 50px;
@@ -77,9 +76,9 @@ ul, li {
     user-select: none;
 }
 nav {
+    display: none;
+
     background-color: #732b6b;
-    width: 100vw;
-    height: 2734px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
     font-size: 19px;
     font-weight: bold;
@@ -209,7 +208,4 @@ footer {
 #footer  > li {
     display: block;
     text-align: left;
-}
-::-webkit-scrollbar {
-    display: none;
 }
