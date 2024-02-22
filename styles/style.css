@@ -16,7 +16,7 @@ body {
 
 
 /* APRESENTAÇÃO */
-section#apresentacao {
+div#background {
     display: block;
     background: url("/img/Background/bg-diganao.jpg") no-repeat center center fixed;
     width: 100%;
@@ -168,11 +168,6 @@ input:hover {
 }
 span {
     color: red;
-}
-section {
-    padding: 2rem;
-    max-width: 600px;
-    margin: auto;
 }
 #btnbar {
     background-color: rgba(150, 57, 237, 0.404);
