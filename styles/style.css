@@ -18,7 +18,7 @@ body {
 /* APRESENTAÇÃO */
 div#background {
     display: block;
-    background: url("/img/Background/mulher-bg.jpg") no-repeat center center fixed;
+    background: url('/img/Background/mulher-bg.jpg') no-repeat center center fixed;
     width: 100%;
     height: 85vh;
     border-bottom-left-radius: 464mm 40mm;
