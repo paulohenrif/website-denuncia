@@ -16,12 +16,15 @@ body {
 
 
 /* APRESENTAÇÃO */
+section#apresentacao {
+    background: url('/img/Background/mulher-bg.jpg') no-repeat center center fixed;
+    border-bottom-left-radius: 464mm 40mm;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.521);
+}
 div#background {
     display: block;
-    background: url('/img/Background/mulher-bg.jpg') no-repeat center center fixed;
     width: 100%;
     height: 85vh;
-    border-bottom-left-radius: 464mm 40mm;
 }
 header {
     display: flex;
