@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
     margin: 0px;
     padding: 0px;
@@ -10,7 +11,6 @@
     display: none;
 }
 body {
-    background-color: rgba(95, 6, 177, 0.265);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
