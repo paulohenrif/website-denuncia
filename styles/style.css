@@ -11,13 +11,14 @@
     display: none;
 }
 body {
+    background-color: rgba(95, 6, 177, 0.265);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
 /* APRESENTAÇÃO */
 section#apresentacao {
-    background: url('/img/Background/mulher-bg.jpg') no-repeat center center fixed;
+    background: url('/img/Background/bground.png') no-repeat center center fixed;
     border-bottom-left-radius: 464mm 40mm;
     box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.521);
 }
@@ -86,9 +87,8 @@ ul, li {
     cursor: pointer;
     user-select: none;
 }
-nav {
-    display: none;
-
+/*nav {
+     display: none;
     background-color: #732b6b;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
     font-size: 19px;
@@ -96,8 +96,8 @@ nav {
     position: absolute;
     top: 70px;
     left: 0px;
-    z-index: 1;
-}
+    z-index: 1; 
+}*/
 #navbar > ul {
     list-style-type: none;
 }
