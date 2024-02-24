@@ -18,7 +18,7 @@ body {
 
 /* APRESENTAÇÃO */
 section#apresentacao {
-    background: url('/img/Background/bground.png') no-repeat center center fixed;
+    background: no-repeat center center fixed;
     border-bottom-left-radius: 464mm 40mm;
     box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.521);
 }
